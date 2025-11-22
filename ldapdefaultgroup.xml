@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+   <name>ldapdefaultgroup</name>
+   <version>1.0.0</version>
+   <description>
+      <short>
+         <en>Automatically set default group for LDAP users</en>
+         <zh_CN>自动为LDAP用户设置默认分组</zh_CN>
+      </short>
+      <long>
+         <en>This plugin automatically sets the default group field to the first group when syncing users from LDAP.</en>
+         <zh_CN>此插件在LDAP同步用户时，自动将默认分组字段设置为用户的第一个群组。</zh_CN>
+      </long>
+   </description>
+   <author>KISSWAM</author>
+   <license>GPLv2+</license>
+   <homepage>https://github.com/yourname/ldapdefaultgroup</homepage>
+   <requirements>
+      <glpi>
+         <min>10.0</min>
+         <max>10.1</max>
+      </glpi>
+   </requirements>
+   <!-- 钩子定义 -->
+   <hooks>
+      <hook>
+         <type>item_add</type>
+         <itemtype>User</itemtype>
+         <function>plugin_ldapdefaultgroup_item_add_user</function>
+      </hook>
+      <hook>
+         <type>item_update</type>
+         <itemtype>User</itemtype>
+         <function>plugin_ldapdefaultgroup_item_update_user</function>
+      </hook>
+   </hooks>
+</plugin>
