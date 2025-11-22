@@ -1,0 +1,2 @@
+# ldap_default_group
+GLPI在LDAP同步用户时，此插件自动将默认分组字段设置为用户的第一个群组。
