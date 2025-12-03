@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin>
    <name>ldapdefaultgroup</name>
-   <version>1.0.0</version>
+   <version>1.0.2</version>
    <description>
       <short>
          <en>Automatically set default group for LDAP users</en>
@@ -14,11 +14,12 @@
    </description>
    <author>KISSWAM</author>
    <license>GPLv2+</license>
-   <homepage>https://github.com/yourname/ldapdefaultgroup</homepage>
+   <homepage>https://github.com/KissWam/ldap_default_group</homepage>
+   <author_uri>https://github.com/KissWam</author_uri>
    <requirements>
       <glpi>
-         <min>10.0</min>
-         <max>10.1</max>
+        <min>10.0</min>
+        <max>11.1</max>
       </glpi>
    </requirements>
    <!-- 钩子定义 -->

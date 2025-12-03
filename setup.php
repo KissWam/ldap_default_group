@@ -2,8 +2,9 @@
 /**
  * Plugin Name: LDAP Default Group
  * Description: 自动设置LDAP同步用户的默认分组为第一个群组
- * Version: 1.0.0
- * Author: Your Name
+ * Version: 1.0.2
+ * Author: KISSWAM
+ * Author URI: https://github.com/KissWam
  */
 
 // 确保不能直接访问文件
@@ -11,7 +12,7 @@ if (!defined('GLPI_ROOT')) {
     die('Sorry. You can\'t access this file directly.');
 }
 
-define('PLUGIN_LDAPDEFAULTGROUP_VERSION', '1.0.0');
+define('PLUGIN_LDAPDEFAULTGROUP_VERSION', '1.0.2');
 
 /**
  * 插件初始化函数
@@ -20,15 +21,21 @@ function plugin_init_ldapdefaultgroup() {
     global $PLUGIN_HOOKS;
     
     $PLUGIN_HOOKS['csrf_compliant']['ldapdefaultgroup'] = true;
+    $PLUGIN_HOOKS['config_page']['ldapdefaultgroup'] = 'front/config.form.php';
     
     // 在用户添加后触发钩子
     $PLUGIN_HOOKS['item_add']['ldapdefaultgroup'] = [
-        'User' => 'plugin_ldapdefaultgroup_item_add_user'
+        'User' => 'plugin_ldapdefaultgroup_item_add_user',
+        'Group_User' => 'plugin_ldapdefaultgroup_item_add_group_user'
     ];
     
     // 在用户更新后触发钩子（用于LDAP同步更新）
     $PLUGIN_HOOKS['item_update']['ldapdefaultgroup'] = [
         'User' => 'plugin_ldapdefaultgroup_item_update_user'
+    ];
+
+    $PLUGIN_HOOKS['item_delete']['ldapdefaultgroup'] = [
+        'Group_User' => 'plugin_ldapdefaultgroup_item_delete_group_user'
     ];
 }
 
@@ -39,13 +46,13 @@ function plugin_version_ldapdefaultgroup() {
     return [
         'name'           => 'LDAP Default Group',
         'version'        => PLUGIN_LDAPDEFAULTGROUP_VERSION,
-        'author'         => 'Your Name',
+        'author'         => 'KISSWAM',
         'license'        => 'GPLv2+',
-        'homepage'       => 'https://github.com/yourname/ldapdefaultgroup',
+        'homepage'       => 'https://github.com/KissWam/ldap_default_group',
         'requirements'   => [
             'glpi' => [
                 'min' => '10.0',
-                'max' => '10.1'
+                'max' => '11.1'
             ]
         ]
     ];
