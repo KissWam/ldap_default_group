@@ -12,11 +12,11 @@
   <description>
     <short>
       <en>Automatically set default group for LDAP users</en>
-      <zh_CN>自动为 LDAP 用户设置默认分组</zh_CN>
+      <lang>自动为 LDAP 用户设置默认分组</lang>
     </short>
     <long>
       <en>This plugin automatically sets the default group to the first available group (dynamic first) during LDAP synchronization, with repair options.</en>
-      <zh_CN>在 LDAP 同步期间，自动按优先级（动态群组优先）设置默认分组，并在分组删除时可自动修复。</zh_CN>
+      <lang>在 LDAP 同步期间，自动按优先级（动态群组优先）设置默认分组，并在分组删除时可自动修复。</lang>
     </long>
   </description>
   <authors>
@@ -25,7 +25,7 @@
   <versions>
     <version>
       <num>1.0.2</num>
-      <compatibility>>=10.0.0,<11.2.0</compatibility>
+      <compatibility>~10.0.0 || ~11.0.0 || ~11.1.0</compatibility>
       <download_url>https://github.com/KissWam/ldap_default_group/releases/download/V1.0.2/ldapdefaultgroup.v1.0.2.zip</download_url>
     </version>
   </versions>
