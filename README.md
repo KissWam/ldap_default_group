@@ -31,7 +31,7 @@ GPLv2+
 1. 下载或克隆本插件到 GLPI 的插件目录：
    ```
    cd /path/to/glpi/plugins/
-   git clone [repository-url] ldapdefaultgroup
+   git clone https://github.com/KissWam/ldap_default_group.git ldapdefaultgroup
    ```
    或直接将插件文件复制到 `plugins/ldapdefaultgroup/` 目录
 

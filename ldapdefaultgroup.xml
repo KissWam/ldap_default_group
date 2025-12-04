@@ -26,7 +26,7 @@
         <min>10.0</min>
         <max>11.1</max>
       </glpi>
-      <download>https://github.com/KissWam/ldap_default_group/releases/download/v1.0.2/ldapdefaultgroup-1.0.2.zip</download>
+      <download>https://github.com/KissWam/ldap_default_group/releases/download/V1.0.2/ldapdefaultgroup.v1.0.2.zip</download>
     </version>
   </versions>
 </root>
