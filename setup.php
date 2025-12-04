@@ -72,7 +72,7 @@ function plugin_ldapdefaultgroup_check_prerequisites() {
 /**
  * 检查插件配置
  */
-function plugin_ldapdefaultgroup_check_config() {
+function plugin_ldapdefaultgroup_check_config($verbose = false) {
     return true;
 }
 

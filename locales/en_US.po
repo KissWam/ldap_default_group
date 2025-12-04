@@ -1,0 +1,34 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ldapdefaultgroup 1.0.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-04 00:00+0000\n"
+"PO-Revision-Date: 2025-12-04 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# Config page strings
+msgid "LDAP Default Group"
+msgstr "LDAP Default Group"
+
+msgid "Only set when empty"
+msgstr "Only set when empty"
+
+msgid "If enabled, do not override manual default group."
+msgstr "If enabled, do not override manual default group."
+
+msgid "Override manual choice"
+msgstr "Override manual choice"
+
+msgid "If enabled, force default group to first priority even if manually set."
+msgstr "If enabled, force default group to first priority even if manually set."
+
+msgid "Repair on group deletion"
+msgstr "Repair on group deletion"
+
+msgid "If enabled, when current default group is removed, pick a new one or clear."
+msgstr "If enabled, when current default group is removed, pick a new one or clear."

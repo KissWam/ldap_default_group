@@ -1,38 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin>
-   <name>ldapdefaultgroup</name>
-   <version>1.0.2</version>
-   <description>
-      <short>
-         <en>Automatically set default group for LDAP users</en>
-         <zh_CN>自动为LDAP用户设置默认分组</zh_CN>
-      </short>
-      <long>
-         <en>This plugin automatically sets the default group field to the first group when syncing users from LDAP.</en>
-         <zh_CN>此插件在LDAP同步用户时，自动将默认分组字段设置为用户的第一个群组。</zh_CN>
-      </long>
-   </description>
-   <author>KISSWAM</author>
-   <license>GPLv2+</license>
-   <homepage>https://github.com/KissWam/ldap_default_group</homepage>
-   <author_uri>https://github.com/KissWam</author_uri>
-   <requirements>
+<root>
+  <name>LDAP Default Group</name>
+  <key>ldapdefaultgroup</key>
+  <state>stable</state>
+  <logo>https://raw.githubusercontent.com/KissWam/ldap_default_group/main/ldapdefaultgroup.png</logo>
+  <homepage>https://github.com/KissWam/ldap_default_group</homepage>
+  <license>GPLv2+</license>
+  <description>
+    <short>
+      <en>Automatically set default group for LDAP users</en>
+      <zh_CN>自动为 LDAP 用户设置默认分组</zh_CN>
+    </short>
+    <long>
+      <en>This plugin automatically sets the default group to the first available group (dynamic first) during LDAP synchronization, with repair options.</en>
+      <zh_CN>在 LDAP 同步期间，自动按优先级（动态群组优先）设置默认分组，并在分组删除时可自动修复。</zh_CN>
+    </long>
+  </description>
+  <authors>
+    <author name="KISSWAM" homepage="https://github.com/KissWam" />
+  </authors>
+  <versions>
+    <version>
+      <num>1.0.2</num>
       <glpi>
         <min>10.0</min>
         <max>11.1</max>
       </glpi>
-   </requirements>
-   <!-- 钩子定义 -->
-   <hooks>
-      <hook>
-         <type>item_add</type>
-         <itemtype>User</itemtype>
-         <function>plugin_ldapdefaultgroup_item_add_user</function>
-      </hook>
-      <hook>
-         <type>item_update</type>
-         <itemtype>User</itemtype>
-         <function>plugin_ldapdefaultgroup_item_update_user</function>
-      </hook>
-   </hooks>
-</plugin>
+      <download>https://github.com/KissWam/ldap_default_group/releases/download/v1.0.2/ldapdefaultgroup-1.0.2.zip</download>
+    </version>
+  </versions>
+</root>
