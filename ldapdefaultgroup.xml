@@ -5,7 +5,10 @@
   <state>stable</state>
   <logo>https://raw.githubusercontent.com/KissWam/ldap_default_group/main/ldapdefaultgroup.png</logo>
   <homepage>https://github.com/KissWam/ldap_default_group</homepage>
-  <license>GPLv2+</license>
+  <download>https://github.com/KissWam/ldap_default_group/releases</download>
+  <issues>https://github.com/KissWam/ldap_default_group/issues</issues>
+  <readme>https://raw.githubusercontent.com/KissWam/ldap_default_group/main/README.md</readme>
+  <license>GPL v2+</license>
   <description>
     <short>
       <en>Automatically set default group for LDAP users</en>
@@ -17,13 +20,27 @@
     </long>
   </description>
   <authors>
-    <author name="KISSWAM" homepage="https://github.com/KissWam" />
+    <author>KISSWAM</author>
   </authors>
   <versions>
     <version>
       <num>1.0.2</num>
-      <compatibility>>=10.0 <=11.1</compatibility>
+      <compatibility>>=10.0.0,<11.2.0</compatibility>
       <download_url>https://github.com/KissWam/ldap_default_group/releases/download/V1.0.2/ldapdefaultgroup.v1.0.2.zip</download_url>
     </version>
   </versions>
+  <langs>
+    <lang>en_US</lang>
+    <lang>zh_CN</lang>
+  </langs>
+  <tags>
+    <en>
+      <tag>ldap</tag>
+      <tag>groups</tag>
+      <tag>users</tag>
+    </en>
+  </tags>
+  <screenshots>
+    <screenshot>https://raw.githubusercontent.com/KissWam/ldap_default_group/main/ldapdefaultgroup.png</screenshot>
+  </screenshots>
 </root>
