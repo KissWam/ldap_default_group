@@ -2,7 +2,7 @@
 /**
  * Plugin Name: LDAP Default Group
  * Description: 自动设置LDAP同步用户的默认分组为第一个群组
- * Version: 1.0.2
+ * Version: 1.0.3
  * Author: KISSWAM
  * Author URI: https://github.com/KissWam
  */
@@ -12,7 +12,7 @@ if (!defined('GLPI_ROOT')) {
     die('Sorry. You can\'t access this file directly.');
 }
 
-define('PLUGIN_LDAPDEFAULTGROUP_VERSION', '1.0.2');
+define('PLUGIN_LDAPDEFAULTGROUP_VERSION', '1.0.3');
 
 /**
  * 插件初始化函数
@@ -52,7 +52,7 @@ function plugin_version_ldapdefaultgroup() {
         'requirements'   => [
             'glpi' => [
                 'min' => '10.0',
-                'max' => '11.1'
+                'max' => '12.0.99'
             ]
         ]
     ];

@@ -1,0 +1,34 @@
+# Backup files (created by local edit workflow)
+*.bak
+*.bak-*
+*-othercomputer*
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# WorkBuddy / agent local state
+.workbuddy/
+
+# Local deployment & diagnostic scripts (contain host credentials)
+tools/deploy_*
+tools/diag_*
+tools/verify_*
+tools/probe_*
+tools/inspect_*
+tools/activate_*
+tools/grant_*
+tools/migrate_config_*
+tools/preflight_*
+tools/who_*
+tools/find_tab_*
+tools/patch_*
+
+# Runtime-generated
+logs/
+*.log
